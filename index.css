@@ -188,7 +188,6 @@ main {
   margin-top: 10%;
 }
 .middle {
-  margin-top: 8%;
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -221,7 +220,22 @@ nav button {
   margin: 5%;
   border: none;
 }
+.bottom{
+  margin-left: 2%;
+  margin-top: 3%;
+  display:flex;
+  flex-direction: column;
+  width:45%;
+}
+.bottom h2{
+  font-size: 3.2rem;
+  margin-bottom: 3%;
+}
+.bottom h3{
+  font-size:2.4rem;
+}
 footer {
+  margin-top: 10%;
   display: flex;
   flex-direction: column-reverse;
 }
