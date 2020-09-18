@@ -130,60 +130,116 @@ table {
 
 /* Beginning of my CSS adjustments */
 
-html{
-    font-size: 62.5;
-    font-family: 'Alegreya Sans', sans-serif;
-    background-color: #F9F4F0;
-    color: #493e3e;
+html {
+  font-size: 62.5;
+  font-family: "Alegreya Sans", sans-serif;
+  background-color: #f9f4f0;
+  color: #493e3e;
 }
-h1{
-    font-size:4.3rem;
-    font-weight: bold;
-}
-header{
-    width:100%;
-    display:flex;
-    background-color: #958787;
-}
-nav{
-    width: 75%;
-    display:flex;
-    justify-content: space-around;
-    margin-left: 30%;
-    margin-top: 1%;
-}
-a{
-    font-size: 1.6rem;
-    text-decoration: none;
-}
-h2{
-    font-size: 3.2rem;
-}
-h6{
-    font-size: 2.4rem;
-}
-img{
-    height:50%;
-    width: 50%;
-}
-p{
-    font-size: 1.8rem;
-}
-main{
-    display:flex;
-    flex-direction: column;
-}
-.middle{
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.button{
-        font-size: 1.6rem;
-        background-color:#DE3333;
-        color:#F9F4F0;
-        border-radius: 16px;
-        
- 
 
+header {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #958787;
+  height: 100px;
+}
+h1 {
+  width: 33%;
+  font-size: 3.2rem;
+  font-weight: bold;
+  margin-left: 2%;
+}
+nav {
+  width: 66%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: 30%;
+}
+a {
+  font-size: 1.6rem;
+  text-decoration: none;
+}
+nav a:visited{
+  color:#493e3e
+}
+h2 {
+  font-size: 3.2rem;
+}
+h6 {
+  font-size: 2.4rem;
+}
+img {
+  height: 50%;
+  width: 50%;
+}
+p {
+  font-size: 1.8rem;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2%;
+  margin-left: 5%;
+  width: 25%;
+}
+.heading {
+  margin-top: 10%;
+}
+.middle {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.button {
+  background-color: #de3333;
+  border: none;
+  color: #f9f4f0;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 16px;
+}
+nav button {
+  font-size: 1.6rem;
+}
+.card {
+  height: 50vh;
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #958787;
+  border-radius: 8px;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  width: 90%;
+  margin: 5%;
+  border: none;
+}
+.bottom{
+  margin-left: 2%;
+  margin-top: 3%;
+  display:flex;
+  flex-direction: column;
+  width:45%;
+}
+.bottom h2{
+  font-size: 3.2rem;
+  margin-bottom: 3%;
+}
+.bottom h3{
+  font-size:2.4rem;
+}
+footer {
+  margin-top: 10%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer .button {
+  margin-left: 85%;
+  margin-right: 7%;
 }
