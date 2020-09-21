@@ -155,14 +155,13 @@ nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-left: 30%;
 }
 a {
   font-size: 1.6rem;
   text-decoration: none;
 }
-nav a:visited{
-  color:#493e3e
+nav a:visited {
+  color: #493e3e;
 }
 h2 {
   font-size: 3.2rem;
@@ -206,7 +205,7 @@ nav button {
 }
 .card {
   height: 50vh;
-  width: 50vw;
+  max-width: 50vw;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -220,19 +219,26 @@ nav button {
   margin: 5%;
   border: none;
 }
-.bottom{
+.card img {
+  max-height: 25vh;
+  max-width: 25vh;
+}
+p {
+  padding: 0 5%;
+}
+.bottom {
   margin-left: 2%;
   margin-top: 3%;
-  display:flex;
+  display: flex;
   flex-direction: column;
-  width:45%;
+  width: 45%;
 }
-.bottom h2{
+.bottom h2 {
   font-size: 3.2rem;
   margin-bottom: 3%;
 }
-.bottom h3{
-  font-size:2.4rem;
+.bottom h3 {
+  font-size: 2.4rem;
 }
 footer {
   margin-top: 10%;
@@ -240,6 +246,119 @@ footer {
   flex-direction: column-reverse;
 }
 footer .button {
+  font-size: 1.6rem;
   margin-left: 85%;
   margin-right: 7%;
+}
+@media (max-width: 1700px) {
+  header {
+    flex-direction: column;
+    height: 25vh;
+    justify-content: center;
+    align-items: center;
+  }
+  h1 {
+    margin-left: 0;
+    text-align: center;
+  }
+  nav {
+    width: 50%;
+    margin: 0 auto;
+  }
+  nav a {
+    margin-top: 3%;
+  }
+  nav .button {
+    margin-top: 3%;
+  }
+  .main {
+    width: 100%;
+    margin: 0 auto;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }
+  .middle {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .bottom {
+    margin-bottom: 10px;
+  }
+  footer {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .button {
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+}
+@media (max-width: 1024px) {
+  nav a {
+    font-size: 1.4rem;
+  }
+  nav button {
+    font-size: 1.4rem;
+  }
+  a {
+    font-size: 1.4rem;
+  }
+  h1,
+  h2,
+  .bottom h2 {
+    font-size: 2.4rem;
+  }
+  h6,
+  .bottom h3 {
+    font-size: 1.8rem;
+  }
+  p {
+    font-size: 1.6rem;
+  }
+}
+@media(max-width: 900px){
+  .card img{
+    height:20vh;
+    width:25vw;
+  }
+}
+@media (max-width: 800px) {
+  nav {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .card img {
+    height: 15vh;
+    width: 25vw;
+  }
+}
+@media (max-width: 700px) {
+  .card img {
+    height: 15vh;
+    width: 15vh;
+  }
+}
+@media (max-width: 500px) {
+  h1,
+  h2,
+  .bottom h2 {
+    font-size: 1.8rem;
+  }
+  h6,
+  .bottom h3 {
+    font-size: 1.6rem;
+  }
+  p {
+    font-size: 1.4rem;
+  }
+  .card img {
+    height: 8vh;
+    width: 10vh;
+  }
 }
