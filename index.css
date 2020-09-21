@@ -245,17 +245,22 @@ footer {
   flex-direction: column-reverse;
 }
 footer .button {
+  font-size: 1.6rem;
   margin-left: 85%;
   margin-right: 7%;
 }
-@media(max-width:1024px){
+@media(max-width:1700px){
   header{
     flex-direction: column;
     height: 40%;
     justify-content: center;
   }
+  h1{
+    width: 50%;
+    margin: 0 auto;
+  }
   nav{
-    flex-direction: column;
+    width: 50%;
     margin: 0 auto;
   }
   .main{
@@ -270,5 +275,63 @@ footer .button {
     flex-direction: column;
     margin: 0 auto
   }
-  
+  footer{
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  footer .button{
+    margin: 0 auto;
+    font-size: 1.4rem;
+  }
+}
+@media(max-width:1024px){
+
+  nav a{
+    font-size: 1.4rem;
+  }
+  nav button{
+    font-size: 1.4rem;
+  }
+  a{
+    font-size: 1.4rem;
+  }
+  h1, h2{
+    font-size: 2.4rem;
+  }
+  h6{
+    font-size: 1.8rem;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+}
+@media(max-width: 800px){
+  nav{
+    flex-direction: column;
+  }
+  .card img{
+    height: 15vh;
+     width:25vw;
+   }
+}
+@media(max-width){
+  .card img{
+    height:10vh;
+    width:20vh;
+  }
+}
+@media(max-width:500px){
+  h1, h2{
+    font-size: 1.8rem;
+  }
+  h6{
+    font-size: 1.6rem;
+  }
+  p{
+    font-size: 1.4rem;
+  }
+  .card img{
+    height:8vh;
+    width:10vh;
+  }
 }
