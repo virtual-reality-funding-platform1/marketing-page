@@ -160,6 +160,12 @@ a {
   font-size: 1.6rem;
   text-decoration: none;
 }
+.button{
+ color: #f9f4f0;
+}
+.button:visited{
+  color: #f9f4f0;
+ }
 nav a{
   color:#493e3e;
 }
